@@ -1,0 +1,50 @@
+BODY, TH, TD, TR, OL, UL, LI  { 
+  font-family: verdana, arial, helvetica, sans-serif; 
+  font-size: x-small; color: #FF923D; background-color : #000000;  
+}
+
+a { color: orange } 
+.fomenu { color: #cccccc; }
+a:link, a:visited, a:active { text-decoration: none; }
+.fomenu:hover, a:hover {text-decoration: underline;}
+
+.gomb {
+  background-color: #333333;
+  border: #888888 1px solid;
+  color: orange;
+  cursor: hand;
+  padding-left: 2pt;
+  padding-right: 2pt;
+}
+.gomb:link, .gomb:visited, .gomb:active { color : #cccccc; }
+.gomb:hover { color : #ffffff; }
+
+input, textarea, select, input[type=checkbox], .inp {
+  background-color: #333333;
+  border: #888888 1px solid;
+  color: orange;
+  margin: 1pt;
+}
+
+dummy	{ border: #888888 1px solid; margin: 3pt; padding: 0pt; border-collapse: collapse; }
+/*
+     FILE ARCHIVED ON 05:54:39 Jul 30, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:48:33 Nov 01, 2019.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  PetaboxLoader3.resolve: 73.116
+  PetaboxLoader3.datanode: 162.723 (4)
+  exclusion.robots.policy: 0.214
+  LoadShardBlock: 128.163 (3)
+  RedisCDXSource: 16.309
+  captures_list: 157.608
+  esindex: 0.01
+  CDXLines.iter: 9.872 (3)
+  load_resource: 151.432
+  exclusion.robots: 0.23
+*/

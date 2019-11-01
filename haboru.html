@@ -1,0 +1,471 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-2">
+    <link rel="stylesheet" href="./haboru_files/stilus.css" type="text/css">
+    <script language="JavaScript" src="haboru_files/lem.js"></script>
+
+    <title>
+        Lemuria hadugyi tanacsado
+    </title>
+</head>
+
+
+<body>
+<center>
+    <table width="600">
+        <tbody>
+        <tr>
+            <td width="20%" align="center"><a
+                    href="https://web.archive.org/web/20080202061907fw_/http://aranyhorda.uw.hu/lem/lem.html"> Lemuria
+                tanacsado </a>
+            </td>
+            <td width="20%" align="center"><b>Haboru</b>
+            </td>
+            <td width="20%" align="center"><a
+                    href="https://web.archive.org/web/20080202061907fw_/http://aranyhorda.uw.hu/lem/mvari.html"> Magadra
+                hato varazslat </a>
+            </td>
+            <td width="20%" align="center"><a
+                    href="https://web.archive.org/web/20080202061907fw_/http://aranyhorda.uw.hu/lem/ebecslo.html">
+                Ellenseg becslo </a>
+            </td>
+            <td width="20%" align="center"><a
+                    href="https://web.archive.org/web/20080202061907/http://aranyhorda.uw.hu/topic.php?topic=Lemuria">
+                Forum </a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <form name="f">
+        <table>
+            <tbody>
+            <tr>
+                <th colspan="4">
+                    <center>Támadó</center>
+                </th>
+                <th colspan="4">
+                    <center>Védo</center>
+                </th>
+            </tr>
+            <tr>
+                <td align="right">Adatok
+                </td>
+                <td colspan="3"><textarea name="data1" rows="3" onchange="parse1()">Masold ide a gombot, vagy a fooldalt!</textarea>
+                </td>
+                <td align="right">Adatok
+                </td>
+                <td colspan="3"><textarea name="data2" rows="3" onchange="parse2()">Masold ide a gombot, vagy a fooldalt!</textarea>
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Nép
+                </td>
+                <td colspan="3"><select name="nep1">
+                    <option value="0" selected="">Szkíta</option>
+                    <option value="1">Római</option>
+                    <option value="2">Sumér</option>
+                    <option value="3">Kelta</option>
+                    <option value="4">Germán</option>
+                    <option value="5">Egyiptomi</option>
+                    <option value="6">Görög</option>
+                    <option value="7">Föníciai</option>
+                    <option value="8">Héber</option>
+                    <option value="9">Perzsa</option>
+                </select></td>
+                <td align="right">Nép
+                </td>
+                <td colspan="3"><select name="nep2">
+                    <option value="0" selected="">Szkíta</option>
+                    <option value="1">Római</option>
+                    <option value="2">Sumér</option>
+                    <option value="3">Kelta</option>
+                    <option value="4">Germán</option>
+                    <option value="5">Egyiptomi</option>
+                    <option value="6">Görög</option>
+                    <option value="7">Föníciai</option>
+                    <option value="8">Héber</option>
+                    <option value="9">Perzsa</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right">Kor
+                </td>
+                <td colspan="3"><select name="kor1" width="10">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected="">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></td>
+                <td align="right">Kor
+                </td>
+                <td colspan="3"><select name="kor2">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected="">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right">Harci kedv
+                </td>
+                <td colspan="3"><input type="text" name="moral1" size="2" value="80">
+                </td>
+                <td align="right">Harci kedv
+                </td>
+                <td colspan="3"><input type="text" name="moral2" size="2" value="80">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Dekadencia
+                </td>
+                <td colspan="3"><input type="text" name="deka1" size="2" value="0">
+                </td>
+                <td align="right">Dekadencia
+                </td>
+                <td colspan="3"><input type="text" name="deka2" size="2" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Terulet
+                </td>
+                <td colspan="3"><input type="text" name="terulet1" size="5" value="3000">
+                </td>
+                <td align="right">Terulet
+                </td>
+                <td colspan="3"><input type="text" name="terulet2" size="5" value="3000">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Pontszam
+                </td>
+                <td colspan="3"><input type="text" name="pont1" size="6" value="150000">
+                </td>
+                <td align="right">Pontszam
+                </td>
+                <td colspan="3"><input type="text" name="pont2" size="6" value="150000">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Tudomány
+                </td>
+                <td colspan="3"><select name="tudi1" width="10">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected="">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></td>
+                <td align="right">Tudomány
+                </td>
+                <td colspan="3"><select name="tudi2">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6" selected="">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right">Allamforma
+                </td>
+                <td colspan="3"><select name="allam1" width="10">
+                    <option value="0" selected="">Egyeb</option>
+                    <option value="1">Törzsszövetség</option>
+                    <option value="2">Triumvirátus</option>
+                    <option value="3">Császárság</option>
+                </select></td>
+                <td align="right">Allamforma
+                </td>
+                <td colspan="3"><select name="allam2">
+                    <option value="0" selected="">Egyeb</option>
+                    <option value="1">Törzsszövetség</option>
+                    <option value="2">Triumvirátus</option>
+                    <option value="3">Császárság</option>
+                </select></td>
+            </tr>
+            <tr>
+                <td align="right">Elhullasi bonusz (%)
+                </td>
+                <td colspan="3"><input type="text" name="elhullas" value="5" size="6">
+                </td>
+                <td align="right">Elhullasi bonusz (%)
+                </td>
+                <td colspan="3"><input type="text" name="elhullas2" value="5" size="6">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Egyeb bonusz
+                </td>
+                <td colspan="3"><input type="text" name="bonusz1" size="6" value="1.0">
+                </td>
+                <td align="right">Egyeb bonusz
+                </td>
+                <td colspan="3"><input type="text" name="bonusz2" size="6" value="1.0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Vérszomj
+                </td>
+                <td colspan="3"><input type="checkbox" name="vari1" checked="true" class=".inp">
+                </td>
+                <td align="right">Védelem
+                </td>
+                <td colspan="3"><input type="checkbox" name="vari2" checked="true">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Bátorság
+                </td>
+                <td colspan="3"><input type="checkbox" name="bator1">
+                </td>
+                <td align="right">Bátorság
+                </td>
+                <td colspan="3"><input type="checkbox" name="bator2">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4"></td>
+                <td align="right">SárkányKöd
+                </td>
+                <td colspan="3"><input type="checkbox" name="sarkanykod">
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>Uj</td>
+                <td></td>
+                <td>Regi</td>
+                <td></td>
+                <td>Uj</td>
+                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td>Regi</td>
+            </tr>
+            <tr>
+                <td align="right">Gyalogság
+                </td>
+                <td><input type="text" name="gyalog1" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="gyalog1r" size="5" value="0">
+                </td>
+                <td align="right">Gyalogság
+                </td>
+                <td><input type="text" name="gyalog2" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="gyalog2r" size="5" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Védo
+                </td>
+                <td><input type="text" name="vedo1" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="vedo1r" size="5" value="0">
+                </td>
+                <td align="right">Védo
+                </td>
+                <td><input type="text" name="vedo2" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="vedo2r" size="5" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Támadó
+                </td>
+                <td><input type="text" name="tamado1" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="tamado1r" size="5" value="0">
+                </td>
+                <td align="right">Támadó
+                </td>
+                <td><input type="text" name="tamado2" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="tamado2r" size="5" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">Ostromgép
+                </td>
+                <td><input type="text" name="ostrom1" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="ostrom1r" size="5" value="0">
+                </td>
+                <td align="right">Ostromgép
+                </td>
+                <td><input type="text" name="ostrom2" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="ostrom2r" size="5" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">E. Védo
+                </td>
+                <td><input type="text" name="evedo1" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="evedo1r" size="5" value="0">
+                </td>
+                <td align="right">E. Védo
+                </td>
+                <td><input type="text" name="evedo2" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="evedo2r" size="5" value="0">
+                </td>
+            </tr>
+            <tr>
+                <td align="right">E. Támadó
+                </td>
+                <td><input type="text" name="etamado1" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="etamado1r" size="5" value="0">
+                </td>
+                <td align="right">E. Támadó
+                </td>
+                <td><input type="text" name="etamado2" size="5" value="0"></td>
+                <td>
+                </td>
+                <td><input type="text" name="etamado2r" size="5" value="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="4" align="right">Ut
+                </td>
+                <td colspan="4" align="left"><input type="text" name="ut" value="1" size="2">
+                </td>
+            </tr>
+
+            <tr>
+                <td><br></td>
+            </tr>
+
+            <tr>
+                <td><input type="button" value="reset1" onclick="reset1()" class="gomb">
+                </td>
+                <td colspan="6">
+                    <center>
+                        <input type="button" value="szamol" onclick="calc()" class="gomb">
+                        <input type="button" value="csere" onclick="csere()" class="gomb">
+                    </center>
+                </td>
+                <td><input type="button" value="reset2" onclick="reset2()" class="gomb">
+                </td>
+            </tr>
+
+            <tr>
+                <td><br></td>
+            </tr>
+
+            <tr>
+                <td align="right">utkozben<br>meghal
+                </td>
+                <td><input type="text" name="utihalott" size="7" value="0">
+                </td>
+                <td align="right">utkozben<br>megserul
+                </td>
+                <td><input type="text" name="utiserult" size="7" value="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right"> tamadas
+                </td>
+                <td><input type="text" name="ossz1" size="7" value="0">
+                </td>
+                <td align="right">letszam
+                </td>
+                <td><input type="text" name="osszegyseg1" size="7" value="0">
+                </td>
+                <td align="right">vedelem
+                </td>
+                <td><input type="text" name="ossz2" size="7" value="0">
+                </td>
+                <td align="right">letszam
+                </td>
+                <td><input type="text" name="osszegyseg2" size="7" value="0">
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="3">
+                </td>
+                <td align="right">tulero
+                </td>
+                <td><input type="text" name="tulero" size="7" value="0">
+                </td>
+                <td colspan="3">
+                </td>
+            </tr>
+
+            <tr>
+                <td align="right">halott
+                </td>
+                <td><input type="text" name="halott1" size="7" value="0">
+                </td>
+                <td align="right">serult
+                </td>
+                <td><input type="text" name="serult1" size="7" value="0">
+                </td>
+                <td align="right">halott
+                </td>
+                <td><input type="text" name="halott2" size="7" value="0">
+                </td>
+                <td align="right">serult
+                </td>
+                <td><input type="text" name="serult2" size="7" value="0">
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </form>
+
+
+    <!--
+    playback timings (ms):
+      esindex: 0.015
+      RedisCDXSource: 21.307
+      exclusion.robots: 0.229
+      captures_list: 82.026
+      PetaboxLoader3.resolve: 114.685
+      load_resource: 165.33
+      CDXLines.iter: 16.4 (3)
+      exclusion.robots.policy: 0.212
+      PetaboxLoader3.datanode: 66.925 (4)
+      LoadShardBlock: 39.974 (3)
+    --></center>
+</body>
+</html>
